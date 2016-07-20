@@ -1,8 +1,11 @@
 percentage = int(input("Enter a percentage: "))
 indefinite_article = "a"
 
-if percentage < 60:
+if percentage == 0:
     letter_grade = "F"
+    indefinite_article = "an"
+elif percentage < 60:
+    letter_grade = "E"
     indefinite_article = "an"
 elif percentage < 70:
     letter_grade = "D"
