@@ -3,7 +3,7 @@ print("Welcome to Hangman!")
 secretWord ="hello"
 
 def isCharInString(word, ch):
-    if ch in word:
+    if ch.lower() in word.lower():
         return True
     else:
         return False

@@ -4,7 +4,7 @@ secretWord = str(input("Enter the secret word: "))
 print("Length of secret word: %d" %len(secretWord))
 
 def isCharInString(word, ch):
-    if ch in word:
+    if ch.lower() in word.lower():
         return True
     else:
         return False
