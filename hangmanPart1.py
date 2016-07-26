@@ -2,7 +2,7 @@ print("Welcome to Hangman!")
 
 secretWord ="hello"
 
-def isuser_strInString(word, ch):
+def isCharInString(word, ch):
     if ch in word:
         return True
     else:
@@ -10,8 +10,8 @@ def isuser_strInString(word, ch):
 
 user_str = str(input("Enter a letter: "))
 
-# check if user_str is in string
-if isuser_strInString(secretWord, user_str):
-    print("%s IS in the secret word." % user_str)
+# check if char is in string
+if isCharInString(secretWord, user_str):
+    print("%s IS in the word %s." % (user_str, secretWord))
 else:
-    print("%s is NOT in the secret word." % user_str)
+    print("%s is NOT in the word %s." % (user_str, secretWord))
