@@ -1,6 +1,6 @@
 last_num = int(input("How large do you want your multiplication table to be? ")) + 1
 
-#print number headers
+# print number headers
 print("\t\t", end="")
 for i in range(1, last_num):
     print(" %d\t\t" %i, end=""),
